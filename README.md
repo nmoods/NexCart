@@ -2,6 +2,15 @@
 
 > A full-featured e-commerce platform built as a monorepo with a shared design system published as an npm library.
 
+**PROJECTS AND LOCALHOST PORTS**
+
+```
+- @nexcart/admin : 3000
+- @nexcart/client : 3005
+- @nexcart/supplier : 3010
+- @nexcart/nexcart-design-system : 6969
+```
+- 
 ## Quick Overview
 
 **NexCart** is a monorepo (Turborepo + pnpm) serving three user types: **Clients** (browse/purchase), **Suppliers** (manage inventory), and **Admins** (platform oversight).
@@ -10,9 +19,11 @@
 NexCart/
 ├── apps/
 │   ├── web/        # React.js (Admin, Supplier, Client dashboards)
-│   └── landing/    # Vite + React (Landing page)
+│        ├──        # Admin
+│        ├──        # Supplier
+│        └──        # Client(Landing Page)
 ├── packages/
-│   ├── ui/         # @nexcart/ui — Design System (npm library)
+│   ├── nexcart-design-system        # @nexcart/ui — Design System (npm library)
 │   ├── eslint-config/
 │   └── tsconfig/
 ├── turbo.json, pnpm-workspace.yaml, package.json

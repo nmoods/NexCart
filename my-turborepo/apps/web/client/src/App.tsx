@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-     <H1> Nexcart-Design-System</H1>
+      <h1>Welcome to client interface</h1>
     </>
   )
 }
