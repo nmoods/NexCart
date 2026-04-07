@@ -115,10 +115,10 @@ Each in `packages/ui/src/components/<Name>/`:
 - Product grid (ProductCard), search, filters, sorting, pagination
 
 ### Page 5: Admin Dashboard (`apps/web`, `/admin/dashboard`)
-- Sidebar nav, KPI cards, Users/Products/Orders Tableaus, UserAdminCard list
+- Sidebar nav, Users/Products/Orders Tableaus, UserAdminCard list
 
 ### Page 6: Supplier Dashboard (`apps/web`, `/supplier/dashboard`)
-- Sidebar nav, KPI cards, My Products Tableau, Orders Tableau
+- Sidebar nav, My Products Tableau, Orders Tableau
 
 ---
 
