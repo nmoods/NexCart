@@ -2,6 +2,15 @@
 
 > A full-featured e-commerce platform built as a monorepo with a shared design system published as an npm library.
 
+**PROJECTS AND LOCALHOST PORTS**
+
+```
+- @nexcart/admin : 3000
+- @nexcart/client : 3001
+- @nexcart/supplier : 3002
+- @nexcart/nexcart-design-system : 3003
+```
+- 
 ## Quick Overview
 
 **NexCart** is a monorepo (Turborepo + pnpm) serving three user types: **Clients** (browse/purchase), **Suppliers** (manage inventory), and **Admins** (platform oversight).
@@ -10,9 +19,11 @@
 NexCart/
 ├── apps/
 │   ├── web/        # React.js (Admin, Supplier, Client dashboards)
-│   └── landing/    # Vite + React (Landing page)
+│        ├──        # Admin
+│        ├──        # Supplier
+│        └──        # Client(Landing Page)
 ├── packages/
-│   ├── ui/         # @nexcart/ui — Design System (npm library)
+│   ├── nexcart-design-system        # @nexcart/ui — Design System (npm library)
 │   ├── eslint-config/
 │   └── tsconfig/
 ├── turbo.json, pnpm-workspace.yaml, package.json
@@ -64,14 +75,13 @@ Configure `turbo.json` (at root):
 Each in `packages/ui/src/components/<Name>/`:
 
 **Components to build:**
-
-1. **Button** — variant, size, disabled, loading
-2. **Input** — label, placeholder, type, value, onChange, error, disabled, icon,validation(zod)
-3. **ProductCard** — imageUrl, productName, price, currency, button, onViewDetails, rating + icon,category
-4. **UserAdminCard** — icon, title, description(bold), icon + sub-description
-5. **Tableau** — columns, data, onSort, pagination, onRowClick
-6. **Sidebar** — items, logo,title
-7. **AdvantageFrame** — icon, title, description
+1. **Button**
+2. **Input**
+3. **ProductCard**
+4. **UserAdminCard**
+5. **Tableau**
+6. **Sidebar**
+7. **AdvantageFrame**
 
 **Per component task:**
 - [ ] Component JSX
@@ -83,31 +93,31 @@ Each in `packages/ui/src/components/<Name>/`:
 
 ### 3d: Testing
 
-## Phase 4: Pages
+## Phase 4: Espaces
 
 > **Ensure `@nexcart/ui` is published/linked before starting pages.**
 > **Each page = one feature branch:** `git flow feature start page-<name>`
 
-### Client 1.a: Landing Page (`apps/landing`)
+###  Espace Client 1.a: Landing Page (`apps/landing`)
 - Navbar, Hero, Advantages (AdvantageFrame), Featured Products (ProductCard), Footer
 
-### Client 1.b: Footer (shared layout)
+### Espace Client 1.b: Footer (shared layout)
 - Logo, nav columns, social links, newsletter signup
 
-### Admin 2: Login (`apps/web`, `/login`)
+### Espace Admin 2: Login (`apps/web`, `/login`)
 - Email & password inputs, sign-in button, forgot password link
 
-### Admin 3: Signup (`apps/web`, `/register`)
+### Espace Admin 3: Signup (`apps/web`, `/register`)
 - Name, email, password, role selector, validation with `react-hook-form` + `zod`
 
-### Page 4: Shop (`apps/web`, `/shop`)
+### Espace 4: Shop (`apps/web`, `/shop`)
 - Product grid (ProductCard), search, filters, sorting, pagination
 
-### Page 5: Admin Dashboard (`apps/web`, `/admin/dashboard`)
-- Sidebar nav, KPI cards, Users/Products/Orders Tableaus, UserAdminCard list
+### Espace 5: Admin Dashboard (`apps/web`, `/admin/dashboard`)
+- Sidebar nav, Users/Products/Orders Tableaus, UserAdminCard list
 
-### Page 6: Supplier Dashboard (`apps/web`, `/supplier/dashboard`)
-- Sidebar nav, KPI cards, My Products Tableau, Orders Tableau
+### Espace 6: Supplier Dashboard (`apps/web`, `/supplier/dashboard`)
+- Sidebar nav, My Products Tableau, Orders Tableau
 
 ---
 
