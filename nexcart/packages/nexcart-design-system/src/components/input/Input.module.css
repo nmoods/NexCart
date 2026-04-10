@@ -1,14 +1,42 @@
 .body {
-    font-family: 'Inter', sans-serif;
-    background-color: #f5f5f5;
+    font: 400 16px/24px "Inter", sans-serif;
 }
 
-.input--container{
+.input--container {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.input--error-message{
-   border: 1px solid red;
+.input--textbox {
+    border: 1px solid gray;
+    border-radius: 4px;
+    height: 40px;
+    width: 25vw;
+    transition: border-color 0.2s ease;
+}
+
+.input--textbox:focus-visible {
+    outline: 1px solid grey;
+    border-color: grey;
+}
+
+/* Error state styling - using :has() to detect error message */
+.input--textbox:has(+ .input--error-message) {
+    border-color: red;
+    background-color: #ffe6e6;
+}
+
+.input--textbox:has(+ .input--error-message):focus-visible {
+    outline: 1px solid red;
+    border-color: red;
+}
+
+.input--error-message {
+    color: red;
+    font-size: 16px;
+}
+
+.input--error-message:focus-visible {
+    border-color: red;
 }

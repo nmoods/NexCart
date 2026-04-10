@@ -12,15 +12,6 @@ const meta = {
       control: 'text',
       description: 'Placeholder text for the input',
     },
-    type: {
-      control: 'select',
-      options: ['text', 'email', 'password', 'number', 'date'],
-      description: 'Input type',
-    },
-    disabled: {
-      control: 'boolean',
-      description: 'Disable the input field',
-    },
     value: {
       control: 'text',
       description: 'Current value of the input',
@@ -33,25 +24,22 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-      title: 'Title',
+    title: 'Title',
     placeholder: 'Placeholder text',
-    type: 'text',
   },
 };
 
 export const Email: Story = {
   args: {
     placeholder: 'Enter your email...',
-    type: 'email',
   },
 };
 
 export const OnError: Story = {
   args: {
-        title: 'Email',
+    title: 'Email',
     placeholder: 'Enter your email...',
-    type: 'email',
-    errorMessage: 'Invalid email address',
+    errorMessage: 'This is an error message'
   },
 };
 
