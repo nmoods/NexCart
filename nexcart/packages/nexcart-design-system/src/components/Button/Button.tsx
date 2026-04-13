@@ -1,4 +1,5 @@
-import type {ComponentPropsWithoutRef} from "react";
+import type {ComponentPropsWithoutRef, PropsWithChildren} from "react";
+import styles from './Button.module.css';
 
 export const buttonVariants = {
     primary: "primary",
@@ -17,17 +18,19 @@ export const Button = ({
                            className,
                            disabled,
                            loading,
-                       }: ButtonProps) => {
-    return (
-        <button
-            className={className}
-            disabled={disabled || loading}
-            type="button"
-        >
-            {children}
+                           variant = "primary",
+                           ...args
+                       }: PropsWithChildren<ButtonProps>) => (
 
-        </button>
-    );
-}
+    <button
+        className={[styles['af-btn-client'], styles[`af-btn-client--${variant}`], className]
+            .filter(Boolean)
+            .join(" ")}
+        disabled={disabled || loading}
+        type="button"
+        {...args}
+    >
+        {children}
+    </button>
+);
 
-export default Button;

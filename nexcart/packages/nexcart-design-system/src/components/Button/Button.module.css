@@ -1,0 +1,59 @@
+.af-btn-client {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 16px 32px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+}
+
+.af-btn-client--primary {
+    background: linear-gradient(135deg, #5b4bff, #7a5cff);
+    color: #ffffff;
+
+    &:hover {
+        filter: brightness(1.1);
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+
+    &:focus-visible {
+        outline: 2px solid #5b4bff;
+        outline-offset: 3px;
+    }
+}
+
+.af-btn-client--secondary {
+    background: #f5f6ff;
+    color: #5b4bff;
+    border: 2px solid #5b4bff;
+
+    &:hover {
+        background: #eceeff;
+    }
+
+    &:focus-visible {
+        outline: 2px solid #5b4bff;
+        outline-offset: 3px;
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+}
