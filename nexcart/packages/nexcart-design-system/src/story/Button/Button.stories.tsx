@@ -25,15 +25,6 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Playground: Story = {
-    args: {
-        children: "Ki derouler",
-        variant: "primary",
-        disabled: false,
-        loading: false,
-    },
-};
-
 export const Primary: Story = {
     args: {
         children: "Button",
@@ -54,31 +45,3 @@ export const Disabled: Story = {
         disabled: true,
     },
 };
-
-export const All: Story = {
-    render: () => (
-        <div>
-            <div>
-                <h3>Primary</h3>
-                <Button variant="primary">Primary Button</Button>
-            </div>
-            <div>
-                <h3>Secondary</h3>
-                <Button variant="secondary">Secondary Button</Button>
-            </div>
-            <div>
-                <h3>Primary Disabled</h3>
-                <Button variant="primary" disabled>
-                    Disabled
-                </Button>
-            </div>
-            <div>
-                <h3>Secondary Disabled</h3>
-                <Button variant="secondary" disabled>
-                    Disabled
-                </Button>
-            </div>
-        </div>
-    ),
-};
-

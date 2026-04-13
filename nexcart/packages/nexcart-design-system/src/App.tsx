@@ -1,11 +1,13 @@
-import { useState } from 'react'
 import './App.css'
+import { Button } from "./components/Button/Button"
+import './token.css'
 
 function App() {
 
   return (
     <>
-     <H1> Nexcart-Design-System</H1>
+     <h1> Nexcart-Design-System</h1>
+        <Button variant="primary">Primary Button</Button>
     </>
   )
 }
