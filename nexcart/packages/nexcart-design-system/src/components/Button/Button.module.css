@@ -1,8 +1,8 @@
 .af-btn-client {
     font-family: inherit;
-    font-size: 16px;
+    font-size: var(--size-16);
     font-weight: 500;
-    padding: 16px 48px;
+    padding: var(--size-16) var(--size-48);
     border-radius: var(--radius-12);
     border: none;
     cursor: pointer;
