@@ -1,11 +1,11 @@
-import { useState } from 'react'
 import './App.css'
+import './token.css'
 
 function App() {
 
   return (
     <>
-     <H1> Nexcart-Design-System</H1>
+     <h1> Nexcart-Design-System</h1>
     </>
   )
 }

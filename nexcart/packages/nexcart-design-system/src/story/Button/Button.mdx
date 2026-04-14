@@ -1,0 +1,46 @@
+import { Canvas, Controls, Meta } from "@storybook/addon-docs";
+import * as ButtonStories from "./Button.stories";
+
+<Meta of={ButtonStories} />
+
+# Button
+
+The Button component is a versatile UI element used for triggering actions. It supports different variants and states like loading and disabled.
+
+## Usage
+
+```tsx
+import { Button } from "@nexcart/nexcart-design-system";
+
+const MyComponent = () => (
+  <>
+    <Button>Primary Button</Button>
+    <Button variant="secondary">Secondary Button</Button>
+    <Button disabled>Disabled Button</Button>
+  </>
+);
+```
+
+## Props
+
+- `variant`: `"primary"` | `"secondary"` - Changes the button style.
+- `loading`: `boolean` - Shows a loading state.
+- `disabled`: `boolean` - Disables the button.
+- Other props are passed to the underlying `<button>` element.
+
+## Primary Variant
+
+<Canvas of={ButtonStories.Primary} />
+
+## Secondary Variant
+
+<Canvas of={ButtonStories.Secondary} />
+
+## Disabled State
+
+<Canvas of={ButtonStories.Disabled} />
+
+## Playground
+
+<Canvas of={ButtonStories.Primary} />
+<Controls of={ButtonStories.Primary} />
