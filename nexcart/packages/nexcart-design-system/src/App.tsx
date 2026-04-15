@@ -1,5 +1,4 @@
 import './App.css'
-import './token.css'
 
 function App() {
 
