@@ -23,7 +23,7 @@ export const Button = ({
                        }: PropsWithChildren<ButtonProps>) => (
 
     <button
-        className={[styles['af-btn-client'], styles[`af-btn-client--${variant}`], className]
+        className={[styles['nx-btn'], styles[`nx-btn-${variant}`], className]
             .filter(Boolean)
             .join(" ")}
         disabled={disabled || loading}

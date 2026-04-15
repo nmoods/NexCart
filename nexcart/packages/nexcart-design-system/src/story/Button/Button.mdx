@@ -1,46 +1,36 @@
-import { Canvas, Controls, Meta } from "@storybook/addon-docs";
+import { Canvas, Controls, Meta } from "@storybook/addon-docs/blocks";
 import * as ButtonStories from "./Button.stories";
 
-<Meta of={ButtonStories} />
+<Meta of={ButtonStories} name="Button" />
 
 # Button
 
-The Button component is a versatile UI element used for triggering actions. It supports different variants and states like loading and disabled.
-
-## Usage
+To use the button import it like that:
 
 ```tsx
-import { Button } from "@nexcart/nexcart-design-system";
+import { Button } from "@nexcart/nexcart-design-system/ButtonStories";
 
 const MyComponent = () => (
   <>
-    <Button>Primary Button</Button>
-    <Button variant="secondary">Secondary Button</Button>
-    <Button disabled>Disabled Button</Button>
+    <Button>My button</Button>
+    <Button variant="secondary">My button</Button>
   </>
 );
 ```
 
-## Props
-
-- `variant`: `"primary"` | `"secondary"` - Changes the button style.
-- `loading`: `boolean` - Shows a loading state.
-- `disabled`: `boolean` - Disables the button.
-- Other props are passed to the underlying `<button>` element.
-
-## Primary Variant
-
-<Canvas of={ButtonStories.Primary} />
-
-## Secondary Variant
-
-<Canvas of={ButtonStories.Secondary} />
-
-## Disabled State
-
-<Canvas of={ButtonStories.Disabled} />
-
 ## Playground
 
-<Canvas of={ButtonStories.Primary} />
+<Canvas of={ButtonStories.Primary}></Canvas>
+
 <Controls of={ButtonStories.Primary} />
+
+## Variants
+
+Use the `variant` prop to change the look of the button. [See the examples](#all-variants).
+
+You can also add your own modifier, and the output will be a custom class called `af-btn-client--<yourModifier>` that you can target in your css
+The rest of the props (eg: `type`, `title`) will be passed down to the actual `button` HTML element.
+
+## All variants
+
+<Canvas of={ButtonStories.Primary} layout="fullscreen" />

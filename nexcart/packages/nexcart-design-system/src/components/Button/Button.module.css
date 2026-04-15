@@ -1,4 +1,4 @@
-.af-btn-client {
+.nx-btn {
     font-family: inherit;
     font-size: var(--size-16);
     font-weight: 500;
@@ -6,7 +6,7 @@
     border-radius: var(--radius-12);
     border: none;
     cursor: pointer;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.2s ease-in-out;
@@ -36,7 +36,7 @@
     }
 }
 
-.af-btn-client--secondary {
+.nx-btn--secondary {
     background: var(--primary-purple-bg);
     color: var(--primary-purple);
     border: 2px solid var(--primary-purple);
