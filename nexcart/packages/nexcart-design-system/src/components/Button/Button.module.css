@@ -1,4 +1,4 @@
-.af-btn-client {
+.btn {
     font-family: inherit;
     font-size: var(--size-16);
     font-weight: 500;
@@ -36,7 +36,7 @@
     }
 }
 
-.af-btn-client--secondary {
+.btn-secondary {
     background: var(--primary-purple-bg);
     color: var(--primary-purple);
     border: 2px solid var(--primary-purple);
