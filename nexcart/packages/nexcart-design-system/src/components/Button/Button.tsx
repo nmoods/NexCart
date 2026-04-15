@@ -23,7 +23,7 @@ export const Button = ({
                        }: PropsWithChildren<ButtonProps>) => (
 
     <button
-        className={[styles['btn'], styles[`btn-${variant}`], className]
+        className={[styles['ax-btn'], styles[`ax-btn-${variant}`], className]
             .filter(Boolean)
             .join(" ")}
         disabled={disabled || loading}
