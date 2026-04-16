@@ -1,42 +1,81 @@
 .body {
-    font: 400 16px/24px "Inter", sans-serif;
+    font: var(--font-family-base);
+    font-size: var(--size-16);
 }
 
-.input--container {
+.nx-input--container {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: var(--size-8);
 }
 
-.input--textbox {
-    border: 1px solid gray;
-    border-radius: 4px;
-    height: 40px;
+.nx-input--title {
+    font-size: var(--size-16);
+    font: var(--font-family-base);
+
+}
+
+.nx-input--wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.nx-input--icon--start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: var(--size-10);
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    width: var(--size-20);
+    height: var(--size-20);
+}
+
+.nx-input--icon--end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: var(--size-10);
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    width: var(--size-20);
+    height: var(--size-20);
+}
+
+.nx-input--textbox {
+    border: var(--size-2) solid var(--nx-color-gray);
+    border-radius: var(--radius-4);
+    height: var(--radius-40);
     width: 25vw;
     transition: border-color 0.2s ease;
+    padding-right: var(--radius-40);
+    padding-left: var(--radius-40);
 }
 
-.input--textbox:focus-visible {
-    outline: 1px solid grey;
-    border-color: grey;
+.nx-input--textbox:focus-visible {
+    outline: none;
+    border-color: var(--nx-color-gray);
 }
 
-/* Error state styling - using :has() to detect error message */
-.input--textbox:has(+ .input--error-message) {
-    border-color: red;
+.nx-input--textbox--error {
+    border: var(--size-2) solid var(--nx-color-red);
     background-color: #ffe6e6;
 }
 
-.input--textbox:has(+ .input--error-message):focus-visible {
-    outline: 1px solid red;
-    border-color: red;
+.nx-input--textbox--error:focus-visible {
+    outline: none;
+    border-color: var(--nx-color-red);
 }
 
-.input--error-message {
-    color: red;
-    font-size: 16px;
-}
-
-.input--error-message:focus-visible {
-    border-color: red;
+.nx-input--error-message {
+    color: var(--nx-color-red);
+    font: var(--font-family-base);
+    font-size: var(--size-16);
+    margin-top: var(--radius-4);
 }

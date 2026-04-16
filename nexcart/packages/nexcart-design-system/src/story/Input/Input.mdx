@@ -1,0 +1,26 @@
+import { Canvas, Controls, Meta } from "@storybook/addon-docs/blocks";
+import * as InputStories from "./Input.stories.tsx";
+
+<Meta of={InputStories} name="Input" />
+
+# Input
+
+To use the input import it like that:
+
+
+## Playground
+
+<Controls of={InputStories.Default} />
+
+## Variants
+
+You can also add your own modifier, and the output will be a custom class called `nx-input-client--<yourModifier>` that you can target in your css
+The rest of the props (eg: `type`, `title`) will be passed down to the actual `input` HTML element.
+
+## All variants
+
+<Canvas of={InputStories.Default} layout="fullscreen" />
+<Canvas of={InputStories.Email} layout="fullscreen" />
+<Canvas of={InputStories.OnError} layout="fullscreen" />
+<Canvas of={InputStories.WithIcon} layout="fullscreen" />
+<Canvas of={InputStories.WithSvg} layout="fullscreen" />
