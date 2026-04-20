@@ -1,9 +1,10 @@
-import { describe, it , expect} from 'vitest';
+import { describe, it , expect,vi} from 'vitest';
 import {render,screen} from '@testing-library/react';
+import { userEvent } from '@testing-library/user-event';
 import {Input} from './Input.tsx';
 
 describe('Input Component', () => {
-    it('renders with title and placeholder', ()=> {
+    it('component renders normally', ()=> {
 
         render(
             <Input
@@ -30,5 +31,21 @@ describe('Input Component', () => {
         );
         expect(screen.getByText('Email is required')).toBeInTheDocument();
     })
+    it('should insert single character into input field', async () => {
+        const onChange = vi.fn();
+        render(
+            <Input
+                title="Test"
+                placeholder="Enter text"
+                value=""
+                onChange={onChange}
+            />
+        );
+
+        const input = screen.getByPlaceholderText('Enter text');
+        await userEvent.type(input, 'a');
+
+        expect(onChange).toHaveBeenCalledWith('a');
+    });
 
 })

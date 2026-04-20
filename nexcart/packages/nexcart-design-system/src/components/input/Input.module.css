@@ -52,7 +52,6 @@
     border: var(--size-2) solid var(--nx-color-gray);
     border-radius: var(--radius-4);
     height: var(--radius-40);
-    width: 25vw;
     transition: border-color 0.2s ease;
     padding-right: var(--radius-40);
     padding-left: var(--radius-40);

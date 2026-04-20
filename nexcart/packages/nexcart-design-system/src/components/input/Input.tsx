@@ -1,5 +1,5 @@
 import styles from './Input.module.css';
-import type {ReactNode, ComponentType} from 'react';
+import type {ComponentType, ReactNode} from 'react';
 
 interface InputProps {
     title: string;
@@ -11,15 +11,15 @@ interface InputProps {
     iconEnd?: ComponentType | ReactNode;
 }
 
-export const Input = ({ title, placeholder, value, onChange, errorMessage, iconStart,iconEnd }: InputProps) => {
+export const Input = ({title, placeholder, value, onChange, errorMessage, iconStart, iconEnd}: InputProps) => {
 
     const inputClass = [styles['nx-input--textbox'],
-    errorMessage ? styles['nx-input--textbox--error'] : ''].filter(Boolean).join(' ');
+        errorMessage ? styles['nx-input--textbox--error'] : ''].filter(Boolean).join(' ');
 
 
     const handleIconRender = (icon?: ComponentType | ReactNode) => {
         const IconComponent = typeof icon === 'function' ? icon : null;
-        return IconComponent ? <IconComponent /> : icon;
+        return IconComponent ? <IconComponent/> : icon;
     };
 
     const iconStartElement = handleIconRender(iconStart);
@@ -42,7 +42,7 @@ export const Input = ({ title, placeholder, value, onChange, errorMessage, iconS
 
             {errorMessage &&
                 <span className={styles['nx-input--error-message']}>{errorMessage}</span>
-                }
+            }
         </div>
     );
 };
