@@ -10,7 +10,7 @@
     background-color: var(--select-white);
     padding: var(--size-8) var(--size-28) var(--size-8) var(--size-14);
     border-radius: var(--radius-100);
-    font-size: 14px;
+    font-size: var(--size-14);
     font-weight: var(--font-weight-500);
     border: none;
     outline: none;
