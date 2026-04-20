@@ -11,6 +11,7 @@
     --font-family-publico-headline: "Publico Headline";
     --font-family-publico: "Publico";
     --font-size-base: 16;
+    --font-weight-500: 500;
 
     /* *******************************************************************************/
 
@@ -22,9 +23,11 @@
     --size-8: 8px;
     --size-10: 10px;
     --size-12: 12px;
+    --size-14: 14px;
     --size-16: 16px;
     --size-20: 20px;
     --size-24: 24px;
+    --size-28: 28px;
     --size-32: 32px;
     --size-48: 48px;
 
@@ -62,10 +65,14 @@
     --nx-background-color: #ffe6e6;
     /* *************************************************************************/
 
+    --blue: #1976d2;
+    --blue-focus: #1e88e5;
+    --grey: #333;
     --primary-purple: #5b4bff;
     --primary-purple-light: #7a5cff;
     --primary-purple-bg: #f5f6ff;
     --primary-purple-bg-hover: #eceeff;
+    --select-white: #f1f3f5;
     --white: #ffffff;
 
     /* *************************************************************************/
