@@ -11,7 +11,7 @@ export type DropdownProps = {
 export const Dropdown = forwardRef<HTMLSelectElement, DropdownProps>(
     ({children}) => {
         return (
-            <div className={styles["nx-dropdown"]}>
+            <div className={styles.nxDropdown}>
                 <select
                     className={styles.select}>
                     {children}
