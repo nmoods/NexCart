@@ -16,7 +16,10 @@ export const Dropdown = forwardRef<HTMLSelectElement, DropdownProps>(
                     className={styles.select}>
                     {children}
                 </select>
-                <ChevronDown className={styles.icon} size={CHEVRON_DOWN_SIZE}/>
+                <ChevronDown
+                    className={styles.icon}
+                    size={CHEVRON_DOWN_SIZE}
+                />
             </div>
         );
     }
