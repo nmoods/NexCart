@@ -1,0 +1,42 @@
+.nxDropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: var(--select-white);
+    padding: var(--size-8) var(--size-28) var(--size-8) var(--size-14);
+    border-radius: var(--radius-100);
+    font-size: var(--size-14);
+    font-weight: var(--font-weight-500);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.select:hover {
+    background-color: var(--blue-focus);
+}
+
+.select:focus {
+    background-color: var(--blue-focus);
+    color: var(--white);
+}
+
+.icon {
+    position: absolute;
+    right: var(--size-8);
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--blue);
+    transition: color 0.2s ease;
+}
+
+.select:focus + .icon {
+    color: var(--white);
+}
