@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/jest-axe": "^3.5.9"
+  },
+  "dependencies": {
+    "jest-axe": "^10.0.0"
+  }
+}

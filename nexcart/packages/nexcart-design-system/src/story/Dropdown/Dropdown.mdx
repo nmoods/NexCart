@@ -1,0 +1,27 @@
+import { Canvas, Controls, Meta } from "@storybook/addon-docs/blocks";
+import * as DropdownStories from "./Dropdown.stories";
+
+<Meta of={DropdownStories} name="Dropdown" />
+
+# Dropdown
+
+To use Dropdown import it like this:
+
+```tsx
+import { Dropdown } from "@nexcart/nexcart-design-system/DropdownStories";
+
+const MyComponent = () => (
+     <Dropdown options={["Option 1", "Option 2", "Option 3"]}
+     />;
+ );
+```
+
+## Type
+
+Use the `type` prop to change the type of the select. The available variants are `default`, `error` and `disabled`.
+
+## Dropdown
+
+<Canvas of={DropdownStories.DropdownStory} />
+
+<Controls of={DropdownStories.DropdownStory} />

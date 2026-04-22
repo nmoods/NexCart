@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--size-12);
+
+}
+
+.circle {
+    width: var(--size-140);
+    height: var(--size-140);
+    border-radius: 50%;
+    border: var(--size-2) solid var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--off-white);
+
+    &:focus-visible {
+        outline: none;
+        border: var(--size-4) solid var(--blue);
+    }
+}
+
+.image {
+    width: var(--size-60);
+    height: auto;
+}
+
+.label {
+    font-size: var(--font-size-base);
+    color: var(--grey);
+}
+
+.circle:focus-visible + .label {
+    font-weight: var(--font-weight-600);
+}
