@@ -16,7 +16,7 @@ describe('Button', () => {
         (variant) => {
             render(
                 <Button variant={variant as ButtonVariants}>
-                    Test
+                    test
                 </Button>,
             );
             const button = screen.getByRole("button", { name: /test/i });
