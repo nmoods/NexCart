@@ -5,17 +5,40 @@ import * as CardStories from "./Card.stories.tsx";
 
 # Card
 
-To use the card import it like that:
+The `Card` component uses the **compound component pattern**. Instead of passing props,
+you compose the card using its subcomponents. This gives you full control over the layout
+while keeping consistent styling.
+
+## Usage
 
 ```tsx
 import Card from "@nexcart/nexcart-design-system/Card";
 
 const MyComponent = () => (
-    <Card
-        title="Galaxy S22 Ultra"
-        priceDescription="Starting from"
-        price={32999}
-        promo="56% Off"
-        image={<img src="/phone.jpg" alt="phone" />}
-    />
+    <Card>
+        <Card.ImageContainer>
+            <Card.Image>
+                <img src="/phone.jpg" alt="phone" />
+            </Card.Image>
+            <Card.Promo>56% Off</Card.Promo>
+        </Card.ImageContainer>
+        <Card.Info>
+            <Card.TextBlock>
+                <Card.Title>Galaxy S22 Ultra</Card.Title>
+                <Card.PriceDescription>Special offer</Card.PriceDescription>
+            </Card.TextBlock>
+            <Card.Divider />
+            <Card.PriceContainer>
+                <Card.Price>$32999</Card.Price>
+            </Card.PriceContainer>
+        </Card.Info>
+    </Card>
 );
+```
+
+## All variants
+
+<Canvas of={CardStories.Default} layout="fullscreen" />
+<Canvas of={CardStories.WithPromo} layout="fullscreen" />
+<Canvas of={CardStories.TextOnly} layout="fullscreen" />
+<Canvas of={CardStories.CustomLayout} layout="fullscreen" />
