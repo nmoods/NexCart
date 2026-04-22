@@ -7,21 +7,18 @@ type ProductImageCardProps = {
 
 export const ProductImageCard = ({ label, image }: ProductImageCardProps) => {
     return (
-        <div
-            className={styles.container}
-        >
+        <div className={styles['product-image-card']}>
             <div
-                className={styles.circle}
+                className={styles['product-image-card__circle']}
                 tabIndex={0}
                 role="button"
             >
                 <img
                     src={image}
                     alt={label}
-                    className={styles.image} />
+                    className={styles['product-image-card__image']} />
             </div>
-            <span
-                className={styles.label}>
+            <span className={styles['product-image-card__label']}>
                 {label}
             </span>
         </div>

@@ -1,6 +1,6 @@
 import {forwardRef, type ReactNode} from "react";
-import styles from './Dropdown.module.css';
 import {ChevronDown} from "lucide-react";
+import styles from './Dropdown.module.css';
 
 export const CHEVRON_DOWN_SIZE = 16;
 
@@ -11,13 +11,13 @@ export type DropdownProps = {
 export const Dropdown = forwardRef<HTMLSelectElement, DropdownProps>(
     ({children}) => {
         return (
-            <div className={styles.nxDropdown}>
+            <div className={styles['nx-dropdown']}>
                 <select
-                    className={styles.select}>
+                    className={styles['nx-dropdown__select']}>
                     {children}
                 </select>
                 <ChevronDown
-                    className={styles.icon}
+                    className={styles['nx-dropdown__icon']}
                     size={CHEVRON_DOWN_SIZE}
                 />
             </div>

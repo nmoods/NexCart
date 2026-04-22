@@ -1,12 +1,11 @@
-.container {
+.product-image-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: var(--size-12);
-
 }
 
-.circle {
+.product-image-card__circle {
     width: var(--size-140);
     height: var(--size-140);
     border-radius: 50%;
@@ -22,16 +21,16 @@
     }
 }
 
-.image {
+.product-image-card__image {
     width: var(--size-60);
     height: auto;
 }
 
-.label {
+.product-image-card__label {
     font-size: var(--font-size-base);
     color: var(--grey);
 }
 
-.circle:focus-visible + .label {
+.product-image-card__circle:focus-visible + .product-image-card__label {
     font-weight: var(--font-weight-600);
 }
