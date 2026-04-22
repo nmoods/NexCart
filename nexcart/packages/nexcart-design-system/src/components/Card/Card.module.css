@@ -1,4 +1,4 @@
-.nx-card--container {
+.nx-card__container {
     display: flex;
     flex-direction: column;
     gap: var(--size-8);
@@ -16,6 +16,8 @@
     justify-content: center;
     align-items: center;
     min-height: 180px;
+    padding: var(--size-16);
+    background-color: var(--white);
 }
 
 .nx-card--image {
@@ -33,14 +35,27 @@
 
 .nx-card--promo {
     position: absolute;
-    top: ;
-    right: 0;
-    background-color: #00c853;
+    top: -8%;
+    right: -7%;
+    background-color: var(--nx-card--promo-color);
     color: var(--white);
     font-size: var(--size-12);
     font-weight: var(--font-weight-500);
     padding: var(--size-4) var(--size-8);
     border-radius: var(--radius-4);
+}
+
+.nx-card--divider {
+    height: 1px;
+    background-color: var(--nx-color-gray);
+}
+
+.nx-card--info-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-8);
+    padding: var(--size-16);
+    background-color: var(--nx-card--texblock-color);
 }
 
 .nx-card--textblock {
