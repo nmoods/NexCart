@@ -1,5 +1,5 @@
 import type {Meta, StoryObj} from '@storybook/react';
-import {Input} from '../../components/input/Input.tsx';
+import {Input} from '../../components/Input/Input.tsx';
 import {Eye as EyeIcon} from 'lucide-react';
 
 const meta = {
