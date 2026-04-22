@@ -16,7 +16,9 @@ export const ProductImageCard = ({ label, image }: ProductImageCardProps) => {
                 <img
                     src={image}
                     alt={label}
-                    className={styles['product-image__card--image']} />
+                    className={styles['product-image__card--image']}
+                    loading="lazy"
+                />
             </div>
             <span className={styles['product-image__card--label']}>
                 {label}
