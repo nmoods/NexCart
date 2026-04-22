@@ -1,11 +1,11 @@
-.product-image-card {
+.product-image__card {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: var(--size-12);
 }
 
-.product-image-card__circle {
+.product-image__card--circle {
     width: var(--size-140);
     height: var(--size-140);
     border-radius: 50%;
@@ -21,16 +21,16 @@
     }
 }
 
-.product-image-card__image {
+.product-image__card--image {
     width: var(--size-60);
     height: auto;
 }
 
-.product-image-card__label {
+.product-image__card--label {
     font-size: var(--font-size-base);
     color: var(--grey);
 }
 
-.product-image-card__circle:focus-visible + .product-image-card__label {
+.product-image__card--circle:focus-visible + .product-image__card--label {
     font-weight: var(--font-weight-600);
 }
