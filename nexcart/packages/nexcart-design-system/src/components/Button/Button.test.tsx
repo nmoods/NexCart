@@ -20,7 +20,7 @@ describe('Button', () => {
                 </Button>,
             );
             const button = screen.getByRole("button", { name: /test/i });
-            expect(button).toHaveClass(styles[`af-btn-client--${variant}`]);
+            expect(button).toHaveClass(styles[`nx-btn-${variant}`]);
         },
     );
 
