@@ -1,0 +1,27 @@
+import { Canvas, Controls, Meta } from "@storybook/addon-docs/blocks";
+import * as ProductHeaderStories from "./ProductHeader.stories";
+
+<Meta of={ProductHeaderStories} />
+
+# SectionHeader
+
+A simple header component used to display a section title with a highlighted part and an optional "View All" action.
+
+
+## Usage
+
+```tsx
+import { ProductHeader } from "@nexcart/nexcart-design-system/ProductHeaderStories";
+
+const MyComponent = () => (
+  <>
+    <ProductHeader/>
+  </>
+);
+```
+
+## Playground
+
+<Canvas of={ProductHeaderStories.ProductHeaderStory}></Canvas>
+
+<Controls of={ProductHeaderStories.ProductHeaderStory} />
