@@ -1,0 +1,21 @@
+import { Canvas, Controls, Meta } from "@storybook/addon-docs/blocks";
+import * as ProductImageCardStories from "./ProductImageCard.stories";
+
+<Meta of={ProductImageCardStories} name="ProductImageCard" />
+
+# ProductImageCard
+
+To use ProductImageCard import it like this:
+
+```tsx
+import { ProductImageCard } from "@nexcart/nexcart-design-system/ProductImageCardStories";
+
+const MyComponent = () => (
+  <ProductImageCard image="image-url" label="xxxx" />
+);
+
+## ProductImageCard
+
+<Canvas of={ProductImageCardStories.ProductImageCardStory} />
+
+<Controls of={ProductImageCardStories.ProductImageCardStory} />

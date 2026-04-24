@@ -1,9 +1,9 @@
-.nxDropdown {
+.nx-dropdown {
     position: relative;
     display: inline-block;
 }
 
-.select {
+.nx-dropdown__select {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -18,16 +18,16 @@
     transition: all 0.2s ease;
 }
 
-.select:hover {
+.nx-dropdown__select:hover {
     background-color: var(--blue-focus);
 }
 
-.select:focus {
+.nx-dropdown__select:focus {
     background-color: var(--blue-focus);
     color: var(--white);
 }
 
-.icon {
+.nx-dropdown__icon {
     position: absolute;
     right: var(--size-8);
     top: 50%;
@@ -37,6 +37,6 @@
     transition: color 0.2s ease;
 }
 
-.select:focus + .icon {
+.nx-dropdown__select:focus + .nx-dropdown__icon {
     color: var(--white);
 }
