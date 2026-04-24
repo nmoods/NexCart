@@ -1,0 +1,49 @@
+.nx-pagination {
+    display: inline-flex;
+    padding: var(--size-8) var(--size-12);
+    background-color: var(--nx-pagination--background-color);
+    border-radius: var(--radius-100);
+}
+
+.nx-pagination--list {
+    display: flex;
+    align-items: center;
+    gap: var(--size-8);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nx-pagination--dot {
+    width: var(--size-8);
+    height: var(--size-8);
+    border-radius: 50%;
+    border: none;
+    background-color: var(--nx-pagination--dot-color);
+    padding: 0;
+    cursor: pointer;
+    transition: all var(--transition-duration) ease;
+}
+
+.nx-pagination--dot:hover {
+    background-color: var(--nx-pagination--hover);
+}
+
+.nx-pagination--dot:focus-visible {
+    outline: var(--size-2) solid var(--blue);
+    outline-offset: var(--size-2);
+}
+
+.nx-pagination--dot--active {
+    width: var(--size-24);
+    border-radius: var(--radius-100);
+    background-color: var(--blue);
+}
+
+.nx-pagination--dot--active:hover {
+    background-color: var(--blue-focus);
+}
+
+.nx-pagination--controls {
+    padding-right: var(--size-8);
+}
