@@ -1,0 +1,39 @@
+import { Canvas, Controls, Meta } from "@storybook/addon-docs/blocks";
+import * as PromoCardStories from "./PromoCard.stories";
+import Rehman from "../../assets/rehman.jpg";
+import Dhurandhar from "../../assets/dhurandhar.jpg";
+
+<Meta of={PromoCardStories} name="PromoCard"/>
+
+# PromoCards
+
+A reusable component that displays promotional product cards with:
+- Background image
+- Brand logo
+- Product image
+- Discount text
+
+
+## Usage
+
+```tsx
+import { PromoCard } from "@nexcart/nexcart-design-system/PromoCardStories";
+
+const MyComponent = () => (
+  <PromoCard
+        items={[
+            {
+             label: "Dhurandhar",
+                     brand: "The revenge",
+                     discount: "Tera baap",
+                     image: Rehman,
+                     logo: Rehman,
+                     background: Dhurandhar,
+              },
+      ]}/>
+);
+
+
+<Canvas of={PromoCardStories.Default} />
+
+<Controls of={PromoCardStories.Default} />
