@@ -1,0 +1,27 @@
+import { Canvas, Controls, Meta } from "@storybook/addon-docs/blocks";
+import * as PaginationStories from "./Pagination.stories.tsx";
+
+<Meta of={PaginationStories} name="Pagination" />
+
+# Pagination
+
+The `Pagination` component renders a compact dot-style indicator to navigate
+through pages. It can optionally display an **items-per-page** dropdown and an
+item range counter when placed at the bottom of a listing page.
+
+To use the pagination import it like that:
+
+```tsx
+import { Pagination } from "@nexcart/nexcart-design-system";
+import { useState } from "react";
+
+const MyComponent = () => {
+    const [page, setPage] = useState(1);
+    return (
+        <Pagination
+            currentPage={page}
+            totalPages={8}
+            onPageChange={setPage}
+        />
+    );
+};
