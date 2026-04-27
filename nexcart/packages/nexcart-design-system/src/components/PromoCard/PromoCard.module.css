@@ -1,0 +1,57 @@
+.promo-cards {
+    display: flex;
+    gap: var(--size-16);
+}
+
+.promo-card {
+    position: relative;
+    width: var(--size-280);
+    height: var(--size-140);
+    border-radius: var(--radius-12);
+    padding: var(--size-16);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+
+.promo-card__badge {
+    font-size: var(--font-size-base);
+    padding: var(--size-4) var(--size-8);
+    border-radius: var(--radius-6);
+    width: fit-content;
+    letter-spacing: var(--size-2);
+}
+
+
+.promo-card__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-6);
+}
+
+.promo-card__logo {
+    width: var(--size-28);
+    height: var(--size-28);
+}
+
+.promo-card__brand {
+    font-weight: var(--font-weight-600);
+    font-size: var(--font-size-base);
+}
+
+.promo-card__discount {
+    font-size: var(--font-size-base);
+}
+
+.promo-card__image {
+    position: absolute;
+    right: var(--size-10);
+    bottom: 0;
+    width: var(--size-110);
+}
