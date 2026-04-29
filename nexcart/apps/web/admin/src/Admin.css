@@ -1,0 +1,110 @@
+/* ---------- NAVBAR ---------- */
+.nx-admin--navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--size-24);
+    padding: var(--size-12) var(--size-24);
+    background-color: var(--white);
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.nx-admin--navbar__left,
+.nx-admin--navbar__right {
+    display: flex;
+    align-items: center;
+    gap: var(--size-20);
+}
+
+.nx-admin--navbar__center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nx-admin--navbar__center > * {
+    width: 100%;
+    max-width: 420px;
+}
+
+.nx-admin--navbar__center [class*="nx-input--wrapper"] {
+    width: 100%;
+}
+
+.nx-admin--navbar__center [class*="nx-input--wrapper"] input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nx-admin--header {
+    display: flex;
+    align-items: center;
+    gap: var(--size-8);
+    margin: 0;
+    font-family: var(--font-family-publico-headline);
+    font-size: var(--size-20);
+    font-weight: var(--font-weight-600);
+    color: var(--grey);
+}
+
+.nx-admin--header__logo {
+    color: var(--primary-purple);
+    font-size: var(--size-24);
+}
+
+.nx-admin--navbar__section {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--size-6);
+    font-weight: var(--font-weight-600);
+    color: var(--grey);
+}
+
+/* ---------- ICON BUTTONS ---------- */
+.nx-admin--icon-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--size-32);
+    height: var(--size-32);
+    padding: 0;
+    border: none;
+    border-radius: var(--radius-100);
+    background: transparent;
+    color: var(--grey);
+    cursor: pointer;
+    transition: background-color var(--transition-duration) ease;
+}
+
+.nx-admin--icon-btn:hover {
+    background-color: var(--off-white);
+}
+
+/* ---------- AVATAR ---------- */
+.nx-admin--avatar {
+    width: var(--size-32);
+    height: var(--size-32);
+    border-radius: var(--radius-100);
+    overflow: hidden;
+}
+
+.nx-admin--avatar img,
+.nx-admin--avatar > * {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ---------- SECTION BELOW ---------- */
+.nx-admin--section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-16);
+    padding: var(--size-16) var(--size-24);
+}
+
+.nx-admin--menubar {
+    display: flex;
+    gap: var(--size-12);
+}

@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import './App.css'
+import './Admin.css'
 
-function App() {
+function Admin() {
 
   return (
     <>
@@ -10,4 +10,4 @@ function App() {
   )
 }
 
-export default App
+export default Admin
