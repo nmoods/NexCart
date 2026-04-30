@@ -72,6 +72,9 @@ importers:
 
   apps/web/admin:
     dependencies:
+      '@nexcart/nexcart-design-system':
+        specifier: workspace:*
+        version: link:../../../packages/nexcart-design-system
       react:
         specifier: ^19.2.4
         version: 19.2.4
