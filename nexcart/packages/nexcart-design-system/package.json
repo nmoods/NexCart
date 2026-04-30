@@ -1,5 +1,9 @@
 {
   "name": "@nexcart/nexcart-design-system",
+  "exports": {
+    ".": "./src/index.ts",
+    "./style.css": "./src/token.css"
+  },
   "private": true,
   "version": "0.0.0",
   "type": "module",
