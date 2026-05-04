@@ -1,6 +1,8 @@
 import styles from "./TopUtility.module.css";
 import { MapPin, MessageCircleWarning, Van } from "lucide-react";
 
+const ICON_SIZE = 16;
+
 export const TopUtilityBar = () => {
     return (
         <div className={styles["navBar"]}>
@@ -11,15 +13,15 @@ export const TopUtilityBar = () => {
             <div className={styles["topUtilityBarRight"]}>
                 <div className={styles["item"]}>
                     <span className={styles["icon"]}>
-                        <MapPin />
+                        <MapPin size={ICON_SIZE} />
                     </span>
-                    <span>Deliver to 423651</span>
+                    <span>Deliver to <b>423651</b></span>
                     |
                 </div>
 
                 <div className={styles["item"]}>
                     <span className={styles["icon"]}>
-                        <Van />
+                        <Van size={ICON_SIZE} />
                     </span>
                     <span>Track your order</span>
                     |
@@ -27,7 +29,7 @@ export const TopUtilityBar = () => {
 
                 <div className={styles["item"]}>
                     <span className={styles["icon"]}>
-                        <MessageCircleWarning />
+                        <MessageCircleWarning size={ICON_SIZE} />
                     </span>
                     <span>All Offers</span>
                 </div>
