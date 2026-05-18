@@ -1,13 +1,7 @@
-import './App.css'
-import {Header} from "./components/Header/Header";
+import { Home } from './pages';
 
 function App() {
-
-  return (
-    <div>
-      <Header/>
-    </div>
-  )
+  return <Home />;
 }
 
-export default App
+export default App;
